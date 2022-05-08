@@ -65,6 +65,12 @@ header li {
     padding: 16px;
 }
 
+.skillsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
 .heroImgContent {
     display: flex;
     align-items: center;
@@ -73,12 +79,6 @@ header li {
 
 .Hi {
     padding: 16px;
-}
-
-.skillsGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
 }
 
 .Design {
@@ -170,4 +170,15 @@ header li {
 .PortfolioButton {
     padding: 16px;
     text-align: right;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .Portfolio {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
 }
